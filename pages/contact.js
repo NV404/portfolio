@@ -1,11 +1,17 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import withTransition from '../components/withTransition'
+import { motion } from 'framer-motion'
 
 function Contact() {
     return (
         <>
         <Head><title>Contact</title></Head>
+        <motion.div
+      className="w-[min(560px,_100%)]"
+        initial={{ opacity: 0, y: "-100%" }}
+        animate={{ opacity: 1, y: "0%" }}
+        exit={{ opacity: 1 }}
+      >
             <div className="flex w-[min(560px,_100%)] flex-col">
 
                 <div className="bg-zinc-800 text-white w-[min(560px,_100%)] rounded-lg px-6 py-3 mb-5">
@@ -21,8 +27,9 @@ function Contact() {
                     </p>
                 </div>
             </div>
+            </motion.div>
         </>
     )
 }
 
-export default withTransition(Contact)
+export default Contact

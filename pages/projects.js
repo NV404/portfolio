@@ -1,11 +1,17 @@
 import Head from "next/head";
+import { motion } from 'framer-motion'
 import Link from "next/link";
-import withTransition from "../components/withTransition";
 
 function Projects() {
     return (
         <>
         <Head><title>Projects</title></Head>
+        <motion.div
+      className="w-[min(560px,_100%)]"
+        initial={{ opacity: 0, y: "-100%" }}
+        animate={{ opacity: 1, y: "0%" }}
+        exit={{ opacity: 1 }}
+      >
             <div className="flex w-[min(560px,_100%)] flex-col">
 
                 <div className="bg-zinc-800 text-white w-[min(560px,_100%)] rounded-lg px-6 py-3">
@@ -49,8 +55,9 @@ function Projects() {
                 </Link>
 
             </div>
+            </motion.div>
         </>
     )
 }
 
-export default withTransition(Projects)
+export default Projects

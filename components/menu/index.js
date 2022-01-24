@@ -4,7 +4,6 @@ import { useState } from "react";
 export default function Menu(route){
     
     const [Menu, setMenu]= useState(false);
-    console.log(Menu)
 
     return(
         <>
