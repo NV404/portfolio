@@ -20,7 +20,7 @@ function Projects() {
 
                 <div className="bg-zinc-800 text-white w-[min(560px,_100%)] rounded-lg px-6 py-6 mt-5">
                     <div className="flex">
-                        <img src="noob.png"></img>
+                        <img className="max-h-24" src="noob.png"></img>
                         <div className="pl-5">
                             <h1 className="font-bold text-xl">Noob - A simple Social Media Website</h1>
                             <p>This project is created for fun while learning NextJS. It uses NextJs as frontend and Firebase as Database. This project gained around 200 users under 24 hours.</p>
@@ -34,7 +34,7 @@ function Projects() {
 
                 <div className="bg-zinc-800 text-white w-[min(560px,_100%)] rounded-lg px-6 py-6 mt-5">
                     <div className="flex">
-                        <img className="w-24 rounded-lg" src="dev.png"></img>
+                        <img className="w-24 max-h-24 rounded-lg" src="dev.png"></img>
                         <div className="pl-5">
                             <h1 className="font-bold text-xl">DevBlog</h1>
                             <p>It's a personal blog site which fetch data f rom dev.to prole This website is a demonstration of dev.to websites API.</p>
