@@ -25,7 +25,7 @@ export default function Menu(route){
             <Link href="/"><a><div className={`py-1 bg-zinc-800 hover:bg-zinc-800/75 rounded-lg w-28 text-center mb-5 cursor-pointer ${route.route == '/' ? 'text-blue-400' : ''}`}>Home</div></a></Link>
                 <Link href="/projects"><a><div className={`py-1 bg-zinc-800 hover:bg-zinc-800/75 rounded-lg w-28 text-center mb-5 cursor-pointer ${route.route == '/projects' ? 'text-blue-400' : ''}`}>Projects</div></a></Link>
                 <Link href="/contact"><a><div className={`py-1 bg-zinc-800 hover:bg-zinc-800/75 rounded-lg w-28 text-center mb-5 cursor-pointer ${route.route == '/contact' ? 'text-blue-400' : ''}`}>Contact</div></a></Link>
-                <div className="py-1 bg-zinc-800 hover:bg-zinc-800/75 rounded-lg w-28 text-center cursor-pointer"><p className="text-transparent bg-clip-text bg-gradient-to-br from-purple-600 to-pink-600 font-bold">Resume</p></div>
+                <Link href="CV.pdf"><a><div className="py-1 bg-zinc-800 hover:bg-zinc-800/75 rounded-lg w-28 text-center cursor-pointer"><p className="text-transparent bg-clip-text bg-gradient-to-br from-purple-600 to-pink-600 font-bold">Resume</p></div></a></Link>
             </div>
         </div>
         </>
